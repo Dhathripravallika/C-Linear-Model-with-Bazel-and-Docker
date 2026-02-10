@@ -1,0 +1,10 @@
+common --enable_platform_specific_config
+
+build --incompatible_disallow_empty_glob
+build --verbose_failures
+build --worker_sandboxing
+
+# Optional: enable toolchain resolution explicitly
+build --incompatible_enable_cc_toolchain_resolution
+
+test --test_output=errors
