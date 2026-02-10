@@ -1,9 +1,0 @@
-cc_binary(
-    name = "linear_model_app",
-    srcs = ["appl/main.cpp"],
-    copts = ["-std=c++17"],
-    deps = [
-        "//util:linear_model",
-        "@eigen//:eigen",
-    ],
-)
